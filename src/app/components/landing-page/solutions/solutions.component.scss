@@ -1,0 +1,23 @@
+.solutions {
+  background: #f0f5f9;
+  padding-bottom: 120px;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+
+    h2 {
+      font-weight: 700;
+    }
+  }
+
+  &-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,98 @@
+<div
+  class="filter-container"
+  [ngStyle]="{ gap: selectedKeywords.length > 0 ? '10px' : '0' }"
+>
+  <button class="filter-icon" [matMenuTriggerFor]="filter">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="21"
+      viewBox="0 0 20 21"
+      fill="none"
+    >
+      <g clip-path="url(#clip0_106_63)">
+        <path
+          d="M15 6.5H18"
+          stroke="#485273"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M2 6.5H11"
+          stroke="#485273"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M9 13.5H18"
+          stroke="#485273"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M2 13.5H5"
+          stroke="#485273"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M14.4142 5.08579C15.1953 5.86684 15.1953 7.13317 14.4142 7.91422C13.6332 8.69527 12.3668 8.69527 11.5858 7.91422C10.8047 7.13317 10.8047 5.86684 11.5858 5.08579C12.3668 4.30474 13.6332 4.30474 14.4142 5.08579"
+          stroke="#485273"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M8.41422 12.0858C9.19527 12.8668 9.19527 14.1332 8.41422 14.9142C7.63317 15.6953 6.36684 15.6953 5.58579 14.9142C4.80474 14.1332 4.80474 12.8668 5.58579 12.0858C6.36684 11.3047 7.63317 11.3047 8.41422 12.0858"
+          stroke="#485273"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_106_63">
+          <rect
+            width="20"
+            height="20"
+            fill="white"
+            transform="translate(0 0.5)"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+  </button>
+
+  <div class="applied-filter">
+    @for(keyword of selectedKeywords;track keyword){
+    <div>
+      <p>{{ keyword }}</p>
+      <mat-icon (click)="onRemoveKeyword(keyword)">close</mat-icon>
+    </div>
+    }
+  </div>
+  @if(selectedKeywords.length > 0){
+  <button class="clear-all-btn" (click)="onClearAllFilters()">Clear All</button>
+  }
+</div>
+
+<mat-menu #filter="matMenu">
+  <p class="dropdown-title">Select Industry</p>
+  <ul>
+    @for(keyword of keywords;track keyword){
+    <li class="dropdown-item">
+      <mat-checkbox
+        [checked]="isKeywordSelected(keyword)"
+        (change)="onKeywordChange(keyword, $event)"
+        (click)="$event.stopPropagation()"
+      >
+        {{ keyword }}
+      </mat-checkbox>
+    </li>
+    }
+  </ul>
+</mat-menu>

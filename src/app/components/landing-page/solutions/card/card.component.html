@@ -1,0 +1,20 @@
+<div class="card" (click)="onCardClick()">
+  <div class="card-avatar">
+    <div [ngStyle]="{ 'background-color': solution.avatar }"></div>
+  </div>
+  <div class="card-content">
+    <h3>{{ solution.title }}</h3>
+    <p class="desc">
+      {{ solution.short_desc }}
+    </p>
+
+    <div class="tags">
+      @for(tag of solution.tags; track tag){
+      <div class="tag">
+        <p>{{ tag }}</p>
+      </div>
+
+      }
+    </div>
+  </div>
+</div>

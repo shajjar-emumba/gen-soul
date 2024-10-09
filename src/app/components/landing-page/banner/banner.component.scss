@@ -1,0 +1,20 @@
+.banner {
+  background-color: #071921;
+  padding: 70px 0;
+  overflow: hidden;
+
+  &-content {
+    font-family: "Poppins", sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    color: white;
+    font-size: 56px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    span {
+      color: #ff9900;
+    }
+  }
+}

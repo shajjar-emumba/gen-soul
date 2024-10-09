@@ -1,0 +1,13 @@
+<div class="solutions">
+  <section class="solutions-header container">
+    <h2>Solutions</h2>
+    <app-filter (keywordsChanged)="onKeywordsChanged($event)" />
+  </section>
+  <section class="solutions-cards container">
+    @for(solution of filteredSolutions; track solution.id){
+    <app-card [solution]="solution" />
+    }@empty {
+    <p>No Solutions Found!</p>
+    }
+  </section>
+</div>
