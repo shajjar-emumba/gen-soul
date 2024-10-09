@@ -70,3 +70,8 @@
   padding: 0 13px;
   margin-bottom: 8px;
 }
+
+::ng-deep .mdc-label {
+  color: #485273;
+  font-family: "Inter", sans-serif;
+}

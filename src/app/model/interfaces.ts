@@ -8,4 +8,5 @@ export interface Solution {
   features: string[];
   try_now_url: string;
   avatar: string;
+  path: string;
 }

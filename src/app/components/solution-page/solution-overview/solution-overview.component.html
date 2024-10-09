@@ -1,0 +1,43 @@
+<div class="solution-overview">
+  <div class="solution-overview-avatar">
+    <div [ngStyle]="{ background: solutionContent?.avatar }"></div>
+  </div>
+  <div class="solution-overview-content">
+    <div class="solution-overview-content-heading">
+      <h1>{{ solutionContent?.title }}</h1>
+      <p>
+        {{ solutionContent?.long_desc }}
+      </p>
+    </div>
+
+    <div class="solution-overview-content-tags">
+      @for(tag of solutionContent?.tags; track tag){
+      <div class="tag">
+        <p>{{ tag }}</p>
+      </div>
+      }
+    </div>
+    <div class="solution-overview-content-carousel">
+      <h3>App Screen shorts</h3>
+    </div>
+    <div class="solution-overview-content-works">
+      <h3>How It Works</h3>
+      <ul>
+        @for(points of solutionContent?.how_it_works; track points){
+        <li>{{ points }}</li>
+        }
+      </ul>
+    </div>
+
+    <div class="solution-overview-content-features">
+      <h3>Discover More feature in the app</h3>
+      <p>
+        For more information and to explore additional features, please don't
+        hesitate to contact us.
+      </p>
+      <div>
+        <app-call-to-action text="Contact Us" />
+      </div>
+    </div>
+  </div>
+</div>
