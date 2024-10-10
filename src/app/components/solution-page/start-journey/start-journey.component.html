@@ -3,8 +3,15 @@
   <p>Try it now or deploy to unlock the full potential of the app.</p>
 
   <div class="journey-actions">
-    <button (click)="onTrySolutionNow()">Try Now</button>
-    <button>Deploy</button>
+    <button [disabled]="!solutionContent?.appURl" (click)="onTrySolutionNow()">
+      Try Now
+    </button>
+    <button
+      [disabled]="!solutionContent?.deployURL"
+      (click)="onDeploySolution()"
+    >
+      Deploy
+    </button>
   </div>
 
   <hr />

@@ -16,7 +16,10 @@ export class StartJourneyComponent {
   dialog = inject(MatDialog);
 
   onTrySolutionNow() {
-    console.log('clicked!');
+    window.open(this.solutionContent?.appURl, '_blank');
+  }
+  onDeploySolution() {
+    window.open(this.solutionContent?.deployURL, '_blank');
   }
 
   onMakeItYours() {

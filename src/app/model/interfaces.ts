@@ -9,6 +9,8 @@ export interface Solution {
   try_now_url: string;
   avatar: string;
   path: string;
+  appURl: string;
+  deployURL: string;
 }
 
 export interface UserDetails {

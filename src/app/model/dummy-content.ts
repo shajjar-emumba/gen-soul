@@ -25,6 +25,8 @@ export const SOLUTIONS_DATA = [
       'https://48ckj0nxoj.execute-api.us-east-1.amazonaws.com/dev/login',
     avatar: '#e9afaf',
     path: 'enterprise-knowledge-search',
+    appURl: 'https://48ckj0nxoj.execute-api.us-east-1.amazonaws.com/dev/login',
+    deployURL: '',
   },
   {
     id: '2',
@@ -52,6 +54,8 @@ export const SOLUTIONS_DATA = [
       'https://48ckj0nxoj.execute-api.us-east-1.amazonaws.com/dev/login',
     avatar: '#AFD4E9',
     path: 'linkedIn-post-generator',
+    appURl: '',
+    deployURL: '',
   },
   {
     id: '3',
@@ -79,6 +83,8 @@ export const SOLUTIONS_DATA = [
       'https://48ckj0nxoj.execute-api.us-east-1.amazonaws.com/dev/login',
     avatar: '#BEAFE9',
     path: 'document-processing',
+    appURl: '',
+    deployURL: '',
   },
   {
     id: '4',
@@ -106,6 +112,8 @@ export const SOLUTIONS_DATA = [
       'https://48ckj0nxoj.execute-api.us-east-1.amazonaws.com/dev/login',
     avatar: '#BEE9AF',
     path: 'personalized-travel-planner',
+    appURl: '',
+    deployURL: '',
   },
   {
     id: '5',
@@ -133,6 +141,8 @@ export const SOLUTIONS_DATA = [
       'https://48ckj0nxoj.execute-api.us-east-1.amazonaws.com/dev/login',
     avatar: '#E9AFAF',
     path: 'product-categorization',
+    appURl: '',
+    deployURL: '',
   },
 ];
 
