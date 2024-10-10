@@ -4,11 +4,16 @@ import { StartJourneyComponent } from '../../components/solution-page/start-jour
 import { ActivatedRoute } from '@angular/router';
 import { SOLUTIONS_DATA } from '../../model/dummy-content';
 import { Solution } from '../../model/interfaces';
+import { BreadCrumbComponent } from '../../components/bread-crumb/bread-crumb.component';
 
 @Component({
   selector: 'app-solutions-page',
   standalone: true,
-  imports: [SolutionOverviewComponent, StartJourneyComponent],
+  imports: [
+    SolutionOverviewComponent,
+    StartJourneyComponent,
+    BreadCrumbComponent,
+  ],
   templateUrl: './solutions-page.component.html',
   styleUrl: './solutions-page.component.scss',
 })

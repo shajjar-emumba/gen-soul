@@ -1,0 +1,25 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin: 20px 0;
+
+  mat-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-backward {
+    font-size: 22px;
+    margin-right: 10px;
+    color: #485273;
+  }
+  &-forward {
+    font-size: 16px;
+    color: #8794bd;
+  }
+  a {
+    color: #1452ca;
+  }
+}
