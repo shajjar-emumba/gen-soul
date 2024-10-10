@@ -1,0 +1,17 @@
+<div mat-dialog-content class="modal">
+  @if(data.content){
+  <div class="modal-content">
+    <app-solution-content [solutionDetails]="data.content" />
+  </div>
+  }
+  <div class="modal-form">
+    <app-user-details-form
+      (formSubmitted)="onFormSubmitted($event)"
+      [formConfig]="data.userFormConfig"
+    />
+    <button (click)="onCancel()">Cancel</button>
+  </div>
+  <button mat-icon-button (click)="onCancel()" class="modal-close">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>

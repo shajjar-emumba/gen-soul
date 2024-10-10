@@ -10,3 +10,17 @@ export interface Solution {
   avatar: string;
   path: string;
 }
+
+export interface UserDetails {
+  firstName: string;
+  lastName: string;
+  email: string;
+  jobTitle: string;
+  company: string;
+  country: string;
+}
+
+export interface FormConfig {
+  title: string;
+  ctaText: string;
+}

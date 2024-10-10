@@ -1,0 +1,45 @@
+.modal {
+  display: flex;
+  gap: 20px;
+  background-color: white;
+  height: fit-content;
+  padding: 25px 20px;
+
+  &-content {
+    background-color: #091a21;
+    max-width: 420px;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    border-radius: 11px;
+    font-family: "Inter", sans-serif;
+  }
+
+  &-form {
+    max-width: 420px;
+    width: 100%;
+
+    button {
+      background: transparent;
+      border: none;
+      width: 100%;
+      text-align: center;
+      color: #485273;
+      padding: 8px 0;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &-close {
+    position: absolute;
+    top: 13px;
+    right: 7px;
+    cursor: pointer;
+  }
+}
+
+.mat-mdc-dialog-content {
+  max-height: 100%;
+}

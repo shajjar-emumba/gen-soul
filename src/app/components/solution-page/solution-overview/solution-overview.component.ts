@@ -1,7 +1,9 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { CallToActionComponent } from '../../call-to-action/call-to-action.component';
-import { Solution } from '../../../model/interfaces';
+import { Solution, UserDetails } from '../../../model/interfaces';
 import { NgStyle } from '@angular/common';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalComponent } from '../../modal/modal.component';
 
 @Component({
   selector: 'app-solution-overview',
@@ -12,4 +14,25 @@ import { NgStyle } from '@angular/common';
 })
 export class SolutionOverviewComponent {
   @Input() solutionContent: Solution | undefined;
+  dialog = inject(MatDialog);
+
+  onContactUs() {
+    const dialogRef = this.dialog.open(ModalComponent, {
+      data: {
+        content: null,
+        userFormConfig: {
+          title: 'Contact Us',
+          ctaText: 'Submit',
+        },
+      },
+      maxWidth: '800px',
+    });
+
+    dialogRef.componentInstance.formSubmitted.subscribe(
+      (formData: UserDetails) => {
+        console.log('User Contact US Data Received', formData);
+        dialogRef.close();
+      }
+    );
+  }
 }

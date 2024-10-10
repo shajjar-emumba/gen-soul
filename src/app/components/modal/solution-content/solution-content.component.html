@@ -1,0 +1,38 @@
+<div class="solution">
+  <div class="solution-avatar">
+    <div [ngStyle]="{ background: solutionDetails.avatar }"></div>
+  </div>
+
+  <div class="solution-details">
+    <h1>{{ solutionDetails.title }}</h1>
+    <p class="desc">
+      {{ solutionDetails.short_desc }}
+    </p>
+    <div class="tags">
+      @for(tag of solutionDetails.tags;track tag){
+      <div class="tag">
+        <p>{{ tag }}</p>
+      </div>
+
+      }
+    </div>
+    <h2>Premium features</h2>
+
+    <div class="feature-desc">
+      <p>
+        For more information and to explore additional features of the "{{
+          solutionDetails.title
+        }}" app, please don't hesitate to contact us. Our team is here to assist
+        you in maximizing the app's potential to meet your needs.
+      </p>
+      <ul>
+        @for(feature of solutionDetails.features;track feature){
+        <li>
+          <mat-icon>check</mat-icon>
+          <span>{{ feature }}</span>
+        </li>
+        }
+      </ul>
+    </div>
+  </div>
+</div>
