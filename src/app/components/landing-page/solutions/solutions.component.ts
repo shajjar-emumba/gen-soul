@@ -19,7 +19,7 @@ export class SolutionsComponent {
       this.filteredSolutions = SOLUTIONS_DATA;
     } else {
       this.filteredSolutions = SOLUTIONS_DATA.filter((solution) =>
-        solution.tags.some((tag) => selectedKeywords.includes(tag))
+        selectedKeywords.every((keyword) => solution.tags.includes(keyword))
       );
     }
   }
