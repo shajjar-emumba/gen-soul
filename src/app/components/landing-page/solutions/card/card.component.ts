@@ -18,10 +18,16 @@ export class CardComponent {
   dialog = inject(MatDialog);
 
   onCardClick() {
-    console.log(
-      'Open from if user is not registerd other wise redirect to details page'
-    );
+    const isSolutionUnlocked = localStorage.getItem('SOLUTION_UNLOCKED');
 
+    if (isSolutionUnlocked) {
+      this.router.navigate(['solution', this.solution.path]);
+    } else {
+      this.openUnlockModal();
+    }
+  }
+
+  private openUnlockModal() {
     const dialogRef = this.dialog.open(ModalComponent, {
       data: {
         content: null,
@@ -35,6 +41,7 @@ export class CardComponent {
 
     dialogRef.componentInstance.formSubmitted.subscribe(
       (formData: UserDetails) => {
+        localStorage.setItem('SOLUTION_UNLOCKED', 'true');
         console.log('User Registration Data Received', formData);
         dialogRef.close();
         this.router.navigate(['solution', this.solution.path]);
