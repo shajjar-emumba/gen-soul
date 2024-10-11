@@ -1,0 +1,48 @@
+.carousel-container {
+  width: 100%;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  transition: all 0.5s ease;
+  gap: 20px;
+}
+
+.carousel-item {
+  transition: flex 0.5s ease;
+  padding: 10px;
+  height: 280px;
+  background: #fff9f7;
+  border-radius: 5px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.arrows {
+  position: absolute;
+  top: -40px;
+  right: 10px;
+  button {
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+}
+.feedback {
+  color: red;
+  font-size: 12px;
+}
+@media (max-width: 1000px) {
+  .carousel-item {
+    display: none;
+  }
+
+  .selected {
+    display: block;
+    width: 100%;
+  }
+}

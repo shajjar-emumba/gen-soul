@@ -7,6 +7,7 @@ export interface Solution {
   how_it_works: string[];
   features: string[];
   avatar: string;
+  app_ss: string[];
   path: string;
   appURl: string;
   deployURL: string;

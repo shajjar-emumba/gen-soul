@@ -4,11 +4,17 @@ import { Solution, UserDetails } from '../../../model/interfaces';
 import { NgStyle } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from '../../modal/modal.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @Component({
   selector: 'app-solution-overview',
   standalone: true,
-  imports: [CallToActionComponent, CallToActionComponent, NgStyle],
+  imports: [
+    CallToActionComponent,
+    CallToActionComponent,
+    NgStyle,
+    CarouselComponent,
+  ],
   templateUrl: './solution-overview.component.html',
   styleUrl: './solution-overview.component.scss',
 })
