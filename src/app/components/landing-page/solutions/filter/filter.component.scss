@@ -48,6 +48,15 @@
       }
     }
   }
+
+  @media (max-width: 1000px) {
+    max-width: 400px;
+    overflow: scroll;
+  }
+
+  @media (max-width: 760px) {
+    display: none;
+  }
 }
 
 .clear-all-btn {
@@ -60,6 +69,9 @@
 
   &:hover {
     cursor: pointer;
+  }
+  @media (max-width: 760px) {
+    display: none;
   }
 }
 

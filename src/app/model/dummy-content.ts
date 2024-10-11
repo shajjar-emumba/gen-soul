@@ -21,8 +21,6 @@ export const SOLUTIONS_DATA = [
       'Another feature',
       'Yet another feature',
     ],
-    try_now_url:
-      'https://48ckj0nxoj.execute-api.us-east-1.amazonaws.com/dev/login',
     avatar: '#e9afaf',
     path: 'enterprise-knowledge-search',
     appURl: 'https://48ckj0nxoj.execute-api.us-east-1.amazonaws.com/dev/login',
@@ -50,8 +48,6 @@ export const SOLUTIONS_DATA = [
       'Another feature',
       'Yet another feature',
     ],
-    try_now_url:
-      'https://48ckj0nxoj.execute-api.us-east-1.amazonaws.com/dev/login',
     avatar: '#AFD4E9',
     path: 'linkedIn-post-generator',
     appURl: '',
@@ -79,8 +75,6 @@ export const SOLUTIONS_DATA = [
       'Another feature',
       'Yet another feature',
     ],
-    try_now_url:
-      'https://48ckj0nxoj.execute-api.us-east-1.amazonaws.com/dev/login',
     avatar: '#BEAFE9',
     path: 'document-processing',
     appURl: '',
@@ -108,8 +102,6 @@ export const SOLUTIONS_DATA = [
       'Another feature',
       'Yet another feature',
     ],
-    try_now_url:
-      'https://48ckj0nxoj.execute-api.us-east-1.amazonaws.com/dev/login',
     avatar: '#BEE9AF',
     path: 'personalized-travel-planner',
     appURl: '',
@@ -137,8 +129,6 @@ export const SOLUTIONS_DATA = [
       'Another feature',
       'Yet another feature',
     ],
-    try_now_url:
-      'https://48ckj0nxoj.execute-api.us-east-1.amazonaws.com/dev/login',
     avatar: '#E9AFAF',
     path: 'product-categorization',
     appURl: '',

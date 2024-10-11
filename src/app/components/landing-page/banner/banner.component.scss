@@ -1,7 +1,6 @@
 .banner {
   background-color: #071921;
   padding: 70px 0;
-  overflow: hidden;
 
   &-content {
     font-family: "Poppins", sans-serif;
@@ -17,4 +16,10 @@
       color: #ff9900;
     }
   }
+}
+
+.gradient-container {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

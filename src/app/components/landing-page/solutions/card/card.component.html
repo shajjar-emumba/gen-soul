@@ -8,13 +8,14 @@
       {{ solution.short_desc }}
     </p>
 
-    <div class="tags">
-      @for(tag of solution.tags; track tag){
-      <div class="tag">
-        <p>{{ tag }}</p>
+    <div class="tags-container">
+      <div class="tags">
+        @for(tag of solution.tags; track tag){
+        <div class="tag">
+          <p>{{ tag }}</p>
+        </div>
+        }
       </div>
-
-      }
     </div>
   </div>
 </div>

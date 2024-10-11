@@ -6,7 +6,6 @@ export interface Solution {
   long_desc: string;
   how_it_works: string[];
   features: string[];
-  try_now_url: string;
   avatar: string;
   path: string;
   appURl: string;
