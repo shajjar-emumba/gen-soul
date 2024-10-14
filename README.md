@@ -30,6 +30,17 @@ Start the server
   ng serve
 ```
 
+## Build App
+
+To build the application for production, follow these steps
+
+1. Open Terminal
+2. Run the build command
+   
+```
+ng build
+```
+This command compiles the application into `dist` folder.
 
 ## Adding a New Solution
 
@@ -147,6 +158,7 @@ Example:
 app_ss: ['https://example.com/images/ai-doc-analyzer-1.png', 'https://example.com/images/ai-doc-analyzer-2.png']
 ```
 
+
 **Note:**
 
 After making any changes to the `SOLUTIONS_DATA`, you can` hit Cmd + S (or Ctrl + S on Windows)` to save your changes. Your application will automatically update if running in development mode.
@@ -154,3 +166,5 @@ After making any changes to the `SOLUTIONS_DATA`, you can` hit Cmd + S (or Ctrl 
 Once saved, visit your application at `http://localhost:4200` (or the port where your application is running) to verify that the screenshots display correctly.
 
 Additionally, if you commit these changes to the repository, they will automatically be deployed to [gen-soul on Vercel](https://gen-soul.vercel.app/) via Vercel's continuous deployment. This ensures that the latest updates are live without any manual deployment steps
+
+
