@@ -58,7 +58,6 @@
 
         p {
           font-size: 12px;
-          font-weight: 400;
           color: #485273;
         }
       }
@@ -67,6 +66,9 @@
     &-works {
       ul {
         margin-left: 20px;
+        li {
+          font-weight: 300;
+        }
       }
     }
     &-features {

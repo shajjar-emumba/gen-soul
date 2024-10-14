@@ -14,11 +14,10 @@
   }
 
   &-cards {
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 420px));
     gap: 20px;
-    flex-wrap: wrap;
   }
 
   .feedback {

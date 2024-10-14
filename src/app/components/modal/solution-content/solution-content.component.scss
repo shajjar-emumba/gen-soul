@@ -8,6 +8,9 @@
       width: 32px;
       border-radius: 50%;
     }
+    @media (max-width: 580px) {
+      display: none;
+    }
   }
 
   &-details {

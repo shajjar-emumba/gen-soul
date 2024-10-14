@@ -13,6 +13,9 @@
     padding: 20px;
     border-radius: 11px;
     font-family: "Inter", sans-serif;
+    background-image: url("../../../../public/form-gradient.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &-form {
@@ -42,4 +45,13 @@
 
 .mat-mdc-dialog-content {
   max-height: 100%;
+}
+
+@media (max-width: 900px) {
+  .modal {
+    flex-direction: column;
+  }
+  .mat-mdc-dialog-content {
+    max-height: 65vh;
+  }
 }

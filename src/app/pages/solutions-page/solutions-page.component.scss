@@ -7,9 +7,28 @@
     justify-content: space-between;
     gap: 20px;
 
+    app-solution-overview {
+      z-index: 3;
+      flex: 1;
+    }
+
+    app-start-journey {
+      z-index: 3;
+    }
+
     @media (max-width: 900px) {
       flex-direction: column;
       align-items: center;
     }
+  }
+}
+
+.gradient-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @media (max-width: 540px) {
+    display: none;
   }
 }
