@@ -5,6 +5,7 @@ import { NgStyle } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from '../../modal/modal.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { SingleSlideCarouselComponent } from './single-slide-carousel/single-slide-carousel.component';
 
 @Component({
   selector: 'app-solution-overview',
@@ -14,6 +15,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     CallToActionComponent,
     NgStyle,
     CarouselComponent,
+    SingleSlideCarouselComponent,
   ],
   templateUrl: './solution-overview.component.html',
   styleUrl: './solution-overview.component.scss',

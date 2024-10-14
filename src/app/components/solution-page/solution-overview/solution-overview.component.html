@@ -25,8 +25,8 @@
     <div class="solution-overview-content-carousel">
       <h3>App Screen shots</h3>
       @if(solutionContent){
-      <app-carousel [images]="solutionContent.app_ss"></app-carousel>
-
+      <!-- <app-carousel [images]="solutionContent.app_ss"></app-carousel> -->
+      <app-single-slide-carousel [images]="solutionContent.app_ss" />
       }
     </div>
     <div class="solution-overview-content-works">
