@@ -33,6 +33,11 @@
 .form-row {
   display: flex;
   gap: 20px;
+
+  @media (max-width: 540px) {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 
 .agreement-text {
