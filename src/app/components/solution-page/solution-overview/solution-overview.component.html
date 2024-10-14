@@ -1,6 +1,11 @@
 <div class="solution-overview">
   <div class="solution-overview-avatar">
-    <div [ngStyle]="{ background: solutionContent?.avatar }"></div>
+    <div>
+      <img
+        [src]="solutionContent?.avatar"
+        [alt]="solutionContent?.title + ' avatar'"
+      />
+    </div>
   </div>
   <div class="solution-overview-content">
     <div class="solution-overview-content-heading">

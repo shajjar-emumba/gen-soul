@@ -1,6 +1,8 @@
 <div class="card" (click)="onCardClick()">
   <div class="card-avatar">
-    <div [ngStyle]="{ 'background-color': solution.avatar }"></div>
+    <div>
+      <img [src]="solution.avatar" [alt]="solution.title + ' avatar'" />
+    </div>
   </div>
   <div class="card-content">
     <h3>{{ solution.title }}</h3>

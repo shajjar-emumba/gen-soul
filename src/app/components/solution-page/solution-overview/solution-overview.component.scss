@@ -10,10 +10,15 @@
 
   &-avatar {
     div {
-      width: 44px;
-      height: 44px;
-      background-color: #eda9a9;
+      height: 50px;
+      width: 50px;
       border-radius: 50%;
+      padding: 10px;
+      border: 1px solid #d6ddf1;
+    }
+    img {
+      height: 100%;
+      width: 100%;
     }
 
     @media (max-width: 580px) {

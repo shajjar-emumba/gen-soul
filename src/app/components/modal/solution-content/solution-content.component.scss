@@ -7,6 +7,13 @@
       height: 32px;
       width: 32px;
       border-radius: 50%;
+      padding: 5px;
+      border: 1px solid #d6ddf1;
+      background-color: white;
+    }
+    img {
+      height: 100%;
+      width: 100%;
     }
     @media (max-width: 580px) {
       display: none;
