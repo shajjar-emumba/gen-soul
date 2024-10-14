@@ -66,3 +66,8 @@ p {
   padding-right: 50px !important;
   background-color: white !important;
 }
+
+.cdk-overlay-dark-backdrop {
+  background: rgba(20, 28, 35, 0.83);
+  backdrop-filter: blur(4px);
+}
