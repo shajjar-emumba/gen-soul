@@ -18,9 +18,17 @@ export class SolutionsComponent {
     if (selectedKeywords.length === 0) {
       this.filteredSolutions = SOLUTIONS_DATA;
     } else {
-      this.filteredSolutions = SOLUTIONS_DATA.filter((solution) =>
-        selectedKeywords.every((keyword) => solution.tags.includes(keyword))
+      const lowerCaseKeywords = selectedKeywords.map((keyword) =>
+        keyword.toLowerCase()
       );
+
+      this.filteredSolutions = SOLUTIONS_DATA.filter((solution) => {
+        const lowerCaseTags = solution.tags.map((tag) => tag.toLowerCase());
+
+        return lowerCaseKeywords.every((keyword) =>
+          lowerCaseTags.includes(keyword)
+        );
+      });
     }
   }
 }

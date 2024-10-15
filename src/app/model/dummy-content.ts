@@ -4,7 +4,7 @@ export const SOLUTIONS_DATA = [
     title: 'Enterprise Knowledge Search',
     short_desc:
       'Converese with your knowledge base using GenAI-powered chatbot.',
-    tags: ['Chatbot', 'Knowledge Search', 'test 1', 'test 2  2 2 ', 'test 3'],
+    tags: ['Chatbot', 'Knowledge Search'],
     long_desc:
       "Enterprise Knowledge Search leverages Retrieval-Augmented Generation (RAG) to enable conversational access to your company's knowledge base. The live solution provides limited access and allows users to ask questions specifically about Emumba. However, you can deploy it on your AWS account, using CloudFormation 1-click deployment option to add more documents. For advanced features like citation generation, conversation history, and RAG optimization, you can contact us for tailored solutions.",
     how_it_works: [
