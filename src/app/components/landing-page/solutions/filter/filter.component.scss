@@ -52,6 +52,13 @@
   @media (max-width: 1000px) {
     max-width: 400px;
     overflow: scroll;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+
+    /* For Chrome, Safari, and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   @media (max-width: 760px) {
